@@ -34,7 +34,7 @@ END
 
 ## Create the database
 
-heroku :rake => "db:create"
+rake "db:create"
 
 ##############  commands #################
 
