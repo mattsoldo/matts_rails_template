@@ -51,17 +51,20 @@ END
 run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
 run "cp config/database.yml config/example_database.yml"
 
-git :add => ".", :commit => "-m 'initial commit'"
+git :add => "."
+git :commit => "-m 'initial commit'"
 
 generate :formtastic
 
-git :add => ".", :commit => "-m 'formtastic stylesheets'"
+git :add => "."
+git :commit => "-m 'formtastic stylesheets'"
 
 generate :controller, "welcome index"
 route "map.root :controller => 'welcome'"
 git :rm => "public/index.html"
 
-git :add => ".", :commit => "-m 'adding welcome controller'"
+git :add => "."
+git :commit => "-m 'adding welcome controller'"
 
 ## Delpoy to Heroku
 heroku :create
