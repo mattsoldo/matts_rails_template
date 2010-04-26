@@ -13,8 +13,6 @@ def heroku(command = {})
 end
 
 
-generate 'nifty_layout --haml' 
-
 gem 'haml'
 gem 'will_paginate'
 gem 'formtastic'
@@ -65,6 +63,11 @@ git :rm => "public/index.html"
 
 git :add => "."
 git :commit => "-m 'adding welcome controller'"
+
+generate 'nifty_layout --haml' 
+
+git :add => "."
+git :commit => "-m 'nifty layout'"
 
 ## Delpoy to Heroku
 heroku :create
