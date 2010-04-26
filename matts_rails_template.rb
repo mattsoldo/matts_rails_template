@@ -13,7 +13,7 @@ def heroku(command = {})
 end
 
 
-generate :nifty_layout
+generate 'nifty_layout --haml' 
 
 gem 'haml'
 gem 'will_paginate'
