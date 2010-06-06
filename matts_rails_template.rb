@@ -20,6 +20,8 @@ gem 'formtastic'
 gem "factory_girl"
 gem 'shoulda'
 gem 'hassle'
+gem 'nifty-generator'
+gem 'heroku'
 
 file ".gems", <<-END
 dry_scaffold  
