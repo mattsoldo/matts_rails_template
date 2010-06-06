@@ -12,7 +12,7 @@ def heroku(command = {})
   end
 end
 
-plugin 'delayed_job'
+plugin 'delayed_job', :git => "git://github.com/tobi/delayed_job.git"
 
 file 'Gemfile', <<-ENDEND
   gem "rails", "3.0.pre"
