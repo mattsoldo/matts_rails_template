@@ -12,6 +12,7 @@ def heroku(command = {})
   end
 end
 
+plugin 'delayed_job'
 
 gem 'haml'
 gem 'will_paginate'
@@ -25,7 +26,6 @@ dry_scaffold
 will_paginate  
 formtastic  
 factory_girl  
-inherited_resources --version 1.0.6
 shoulda
 hassle
 END
