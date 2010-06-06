@@ -23,7 +23,8 @@ file 'Gemfile', <<-ENDEND
   gem "factory_girl"
   gem 'shoulda', :git => "git://github.com/thoughtbot/shoulda.git", :branch => "rails3"
   gem 'hassle'
-  gem 'heroku'  
+  gem 'heroku'
+  gem 'nifty-generators'  
 ENDEND
 
 ## Create the database
