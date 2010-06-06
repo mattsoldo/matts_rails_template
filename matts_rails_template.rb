@@ -22,7 +22,8 @@ file 'Gemfile', <<-ENDEND
   gem 'formtastic', :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
   gem "factory_girl"
   gem 'shoulda', :git => "git://github.com/thoughtbot/shoulda.git", :branch => "rails3"
-  gem 'hassle'  
+  gem 'hassle'
+  gem 'heroku'  
 ENDEND
 
 ## Create the database
