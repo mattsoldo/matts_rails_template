@@ -14,21 +14,16 @@ end
 
 plugin 'delayed_job'
 
-gem 'haml'
-gem 'will_paginate'
-gem 'formtastic'
-gem "factory_girl"
-gem 'shoulda'
-gem 'hassle'
-
-file ".gems", <<-END
-dry_scaffold  
-will_paginate  
-formtastic  
-factory_girl  
-shoulda
-hassle
-END
+file 'Gemfile', <<-ENDEND
+  gem "rails", "3.0.pre"
+  gem 'pg'
+  gem 'haml'
+  gem 'will_paginate'
+  gem 'formtastic', :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
+  gem "factory_girl"
+  gem 'shoulda', :git => "git://github.com/thoughtbot/shoulda.git", :branch => "rails3"
+  gem 'hassle'  
+ENDEND
 
 ## Create the database
 
@@ -41,6 +36,7 @@ git :init
 file ".gitignore", <<-END
 .DS_Store
 log/*.log
+log/*.log*
 tmp/**/*
 config/database.yml
 db/*.sqlite3
